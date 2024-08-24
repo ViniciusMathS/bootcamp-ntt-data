@@ -1,0 +1,19 @@
+-> rm -rf .git (remove repo local) ##EXCLUI REPOSITÓRIO LOCAL##
+
+-> git restore <file name> (retorna para a ultima versão salva do arquivo) ##DESCARTA ALTERAÇÕES LOCAIS##
+
+-> git commit --amend -m "seu comentário" (altera o ultimo commit feito)
+
+-> git log (mostra os commits e suas informações como hash do commit)
+
+-> git reset --soft <hash do commit> (deleta o commit e volta para os arquivos para a area de preparação, esperando um novo commit)
+
+-> git reset --mixed <hash do commit> (deleta o commit e volta para os arquivos para a arvore de trabalho 'Untracked files', como arquivos novos)
+
+-> git reset --hard <hash do commit> (deleta o commit e os arquivos dele)
+
+-> git reflog (mostra o histórico de alterações de commit)
+
+-> git reset <file name> (volta o arquivo para da area de preparação para a arvore de trabalho)
+
+-> git restore --staged <file name> (volta o arquivo para da area de preparação para a arvore de trabalho)

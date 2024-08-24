@@ -1,0 +1,4 @@
+-> git clone (clona um repo remoto e inicia localmente)
+
+-> git clone <URL> --branch <Branch name> --single-branch (clona apenas a branch desejada)
+

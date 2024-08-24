@@ -1,0 +1,13 @@
+-> git checkout -b <Branch name> (cria a branch local e altera a branch atual para ela) 
+
+-> git checkout <Branch name> (navega para a branch desejada)
+
+-> git branch -v (lista o ultimo commit de cada branch)
+
+-> git merge <branch name> (traz as alterações feita em uma branch para a outra)
+
+-> git branch (lista as branch existentes)
+
+-> git branch -d <branch name> (exclui a branch desejada)
+
+

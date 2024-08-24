@@ -20,7 +20,7 @@
 
 -> git commit -m "seu comentário" (comenta as modificações feitas)
 
--> git push (envia as modificações feitas para o repositório GitHub)
+-> git push -u origin main (envia as modificações feitas para o repositório GitHub)
 
 
 

@@ -1,0 +1,28 @@
+-> criar uma pasta para ser seu repositório
+
+-> abrir o git bash dentro da pasta criada
+
+--COMANDOS GIT--
+
+-> git init (inicia o repositório local)
+
+-> git remote -v (mostra os repositórios conectados)
+
+-> git remote add origin <URL do repositório no GitHub>
+
+-> git fetch (atualiza o repositório local com o GitHub)
+
+-> git status (mostra os arquivos que estão diferentes do que esta no git)
+
+-> git add <nome do arquivo> (adiciona o arquivo no git)
+
+-> git add . (adiciona todos os arquivos no git)
+
+-> git commit -m "seu comentário" (comenta as modificações feitas)
+
+-> git push (envia as modificações feitas para o repositório GitHub)
+
+
+
+
+

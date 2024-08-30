@@ -1,9 +1,17 @@
 import requests
 import json
 
-def get_something():
-    request = requests.get("https://viacep.com.br/ws/88138154/json/")
+def get_something(cep : str) -> dict:
+    request = requests.get(f"https://viacep.com.br/ws/{cep}/json/")
     print("get something: ")
+    print("status code response: ", request.status_code)
+    #print("content response: ", request.content)
+    all_fields = json.loads(request.content)
+    return all_fields
+
+def get_all() -> list:
+    request = requests.get(f"http://127.0.0.1:5000/carros")
+    print("get all: ")
     print("status code response: ", request.status_code)
     #print("content response: ", request.content)
     all_fields = json.loads(request.content)
@@ -23,7 +31,7 @@ class Endereco:
         self.ddd = ddd
         self.siafi = siafi
 
-endereco = Endereco(**get_something())
+endereco = Endereco(**get_something("88138154"))
 
-print(endereco.cep, endereco.uf, endereco.logradouro)
+print(f"{endereco.logradouro}, 485, {endereco.bairro}, {endereco.localidade} - {endereco.uf}")
 

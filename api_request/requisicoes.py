@@ -18,7 +18,7 @@ def get_all() -> list:
     return all_fields
 
 class Endereco:
-    def __init__(self, cep, logradouro, complemento, unidade, bairro, localidade, uf, ibge, gia, ddd, siafi):
+    def __init__(self, cep, logradouro, complemento, unidade, bairro, localidade, uf, estado, regiao, ibge, gia, ddd, siafi):
         self.cep = cep
         self.logradouro = logradouro
         self.complemento = complemento
@@ -26,6 +26,8 @@ class Endereco:
         self.bairro = bairro
         self.localidade = localidade
         self.uf = uf
+        self.estado = estado
+        self.regiao = regiao
         self.ibge = ibge
         self.gia = gia
         self.ddd = ddd
